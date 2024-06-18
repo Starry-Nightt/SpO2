@@ -5,8 +5,14 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 
 ## B. Hướng dẫn sử dụng
 - Bước 1: Khởi động ứng dụng, màn hình hiển thị power up  
+<img src="/images/buoc1.jpg" alt="esp32" />
+<br>
 - Bước 2: Sau khi power up thành công, màn hình hiển thị "Put your finger". Đặt ngón tay lên.
+<img src="/images/buoc2.jpg" alt="esp32" />
+<br>
 - Bước 3: Ứng dụng sẽ đo và hiển thị chỉ số nhịp tim và nồng độ SPO2 
+<img src="/images/buoc3.jpg" alt="esp32" />
+<br>
 - Bước 4: Bỏ ngón tay ra, ứng dụng sẽ dừng đo.
 
 ## C. Danh sách link kiện
