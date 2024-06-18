@@ -11,9 +11,17 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 
 ## C. Danh sách link kiện
 - <strong>ESP32</strong>
+<p>Số lượng 1</p>
+<img src="/images/esp32.jpg" alt="esp32" />
 - <strong>MAX30102</strong>
+<p>Số lượng 1</p>
+<img src="/images/max30102.jpg" alt="max30102" />
 - <strong>OLED 0.96</strong>
+<p>Số lượng 1</p>
+<img src="/images/oled.jpg" alt="oled" />
 - <strong>Vibration Motor</strong>
+<p>Số lượng 1</p>
+<img src="/images/vm.jpg" alt="vm" />
 
 ## D. Sơ đồ nguyên lý
 
