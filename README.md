@@ -33,6 +33,26 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 
 ## D. Sơ đồ nguyên lý
 ![image](https://github.com/Starry-Nightt/SpO2/assets/95482961/a6749a58-9013-4acc-ba9f-d796ffd5923a)
+| OLED  | Kết nối phần cứng |
+| :---: | :---:          |
+| VCC | VCC   | 
+| GND | GND   |
+| SCL | D22   |  
+
+| MAX30102  | Kết nối phần cứng |
+| :---: | :---:          |
+| VCC | VCC   | 
+| GND | GND   |
+| SDA | D21   | 
+| SCL | D22   |  
+| INT | Not connected   |  
+
+| Vibration motor  | Kết nối phần cứng  |
+| :---: | :---:          |
+| VCC | VCC   | 
+| GND | GND   |
+| INT | D18   |  
+
 
 ## E. Thiết kế phần mềm
 Khi thiết bị khởi động, phần mềm sẽ kiểm tra cảm biến MAX30102 có kết nối với vi điều khiển không. Nếu có lỗi xảy ra, trên màn hình OLED xuất hiện thông báo “MAX30102 was not found. Please check wiring/power.”. Phần mềm tiến hành đọc 100 mẫu giá trị đầu tiên và lưu trữ giá trị của độ sáng đèn LED hồng ngoại vào biến `irBuffer` và giá trị độ sáng đèn LED đỏ tại biến `redBuffer`, số 100 được lưu ở biến  `bufferLength`. 
@@ -50,3 +70,7 @@ Trong quá trình lấy mẫu và tính toán nhịp tim, chỉ số spO2, nếu
 | Trần Thanh Hiền | 20204744   | Làm báo cáo         |
 | Hà Anh Vũ | 20204863   | Lắp thiết bị và kiểm thử        |
 | Hồ Sỹ Vinh | 20204863   |         |
+
+## G. Lời cảm ơn
+Về đề tài, nhóm đã cơ bản hoàn thiện và thử nghiệm được hệ thống hoạt động, đáp ứng những chức năng cơ bản đặt ra. Tuy nhiên bên cạnh đó, hệ thống vẫn còn xảy ra sai số khi đo nhịp tim. 
+Cảm ơn các bạn thành viên trong nhóm đã cố gắng tìm hiểu, đóng góp vào bài tập lớn này. Đặc biệt, nhóm chúng em xin cảm ơn sự giúp đỡ và những nhận xét đánh giá của thầy Nguyễn Đức Tiến trong các buổi đánh giá định kỳ.
