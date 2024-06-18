@@ -16,4 +16,12 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 - <strong>Vibration Motor</strong>
 
 ## D. Sơ đồ nguyên lý
+
 ## E. Thiết kế phần mềm
+Khi thiết bị khởi động, phần mềm sẽ kiểm tra cảm biến MAX30102 có kết nối với vi điều khiển không. Nếu có lỗi xảy ra, trên màn hình OLED xuất hiện thông báo “MAX30102 was not found. Please check wiring/power.”. Phần mềm tiến hành đọc 100 mẫu giá trị đầu tiên và lưu trữ giá trị của độ sáng đèn LED hồng ngoại vào biến `irBuffer` và giá trị độ sáng đèn LED đỏ tại biến `redBuffer`, số 100 được lưu ở biến  `bufferLength`. 
+
+Phần mềm tính toán giá trị nhịp tim và spO2 thông qua 2 giá trị đo được và hiển thị giá trị dữ liệu đọc được lên trên màn OLED. Nếu cảm biến chưa đọc được giá trị, trên màn hình OLED sẽ hiển thị lời nhắc “Put your finger!”. 
+
+Theo thực tế, nếu nồng độ spO2 hiện tại dưới 94% thì màn hình hiển thị “Low SPO2”. Để đánh giá nhịp tim cao hay thấp, nhóm đã đánh giá thông qua giá trị nhịp tim trung bình và giá trị nhịp tim hiện tại của người dùng. Giá trị nhịp tim trung bình (được lưu trữ ở biến `avgHeartRate`) được tính toán thông qua 100 mẫu giá trị mới nhất mà cảm biến đo được. Trong trường hợp nhịp tim trung bình nhỏ hơn 80 BMP: hiển thị trên màn hình nhịp tim thấp nếu nhịp tim hiện tại nhỏ hơn 45 BMP, nhịp tim cao nếu nhịp tim hiện tại lớn hơn 105 BMP. Trong trường hợp còn lại, khi nhịp tim trung bình lớn hơn 80 thì màn hình sẽ hiển thị nhịp tim thấp nếu nhịp tim hiện tại nhỏ hơn 55 BMP, nhịp tim cao nếu nhịp tim hiện tại lớn hơn 110 BMP. 
+
+Trong quá trình lấy mẫu và tính toán nhịp tim, chỉ số spO2, nếu bắt gặp các giá trị bất thường như nêu trên thì còi báo động sẽ kêu để cảnh báo nhờ đặt ngưỡng giá trị là `HIGH`.
