@@ -32,6 +32,7 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 <br>
 
 ## D. Sơ đồ nguyên lý
+![image](https://github.com/Starry-Nightt/SpO2/assets/95482961/a6749a58-9013-4acc-ba9f-d796ffd5923a)
 
 ## E. Thiết kế phần mềm
 Khi thiết bị khởi động, phần mềm sẽ kiểm tra cảm biến MAX30102 có kết nối với vi điều khiển không. Nếu có lỗi xảy ra, trên màn hình OLED xuất hiện thông báo “MAX30102 was not found. Please check wiring/power.”. Phần mềm tiến hành đọc 100 mẫu giá trị đầu tiên và lưu trữ giá trị của độ sáng đèn LED hồng ngoại vào biến `irBuffer` và giá trị độ sáng đèn LED đỏ tại biến `redBuffer`, số 100 được lưu ở biến  `bufferLength`. 
