@@ -10,18 +10,26 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 - Bước 4: Bỏ ngón tay ra, ứng dụng sẽ dừng đo.
 
 ## C. Danh sách link kiện
-- <strong>ESP32</strong>
+<strong>1. ESP32</strong>
 <p>Số lượng 1</p>
 <img src="/images/esp32.jpg" alt="esp32" />
-- <strong>MAX30102</strong>
+<a href="https://linhkienvietnam.vn/module-node-mcu-32s-esp32-devkitc-dung-module-esp-wroom-32">Link mua sản phẩm</a>
+<br>
+<strong>2. MAX30102</strong>
 <p>Số lượng 1</p>
 <img src="/images/max30102.jpg" alt="max30102" />
-- <strong>OLED 0.96</strong>
+<a href="https://vn.shp.ee/DqZJcef">Link mua sản phẩm</a>
+<br>
+<strong>3. OLED 0.96</strong>
 <p>Số lượng 1</p>
 <img src="/images/oled.jpg" alt="oled" />
-- <strong>Vibration Motor</strong>
+<a href="https://nshopvn.com/product/man-hinh-oled-0-96-inch-giao-tiep-spi/">Link mua sản phẩm</a>
+<br>
+<strong>4. Vibration Motor</strong>
 <p>Số lượng 1</p>
 <img src="/images/vm.jpg" alt="vm" />
+<a href="https://linhkien024.vn/module-dong-co-rung-dien-thoai-3-5vdc-bao-rung">Link mua sản phẩm</a>
+<br>
 
 ## D. Sơ đồ nguyên lý
 
