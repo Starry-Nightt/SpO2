@@ -10,6 +10,10 @@ Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cản
 - Bước 4: Bỏ ngón tay ra, ứng dụng sẽ dừng đo.
 
 ## C. Danh sách link kiện
+- <strong>ESP32</strong>
+- <strong>MAX30102</strong>
+- <strong>OLED 0.96</strong>
+- <strong>Vibration Motor</strong>
 
 ## D. Sơ đồ nguyên lý
 ## E. Thiết kế phần mềm
