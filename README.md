@@ -1,4 +1,4 @@
-# SpO2
+# BÀI TẬP LỚN HỆ NHÚNG: CẢM BIẾN ĐO NHỊP TIM VÀ SPO2 
 
 ## A. Giới thiệu
 Tính năng chính: Đo nhịp tim (BPM) và nồng độ SPO2 trong máu, cảnh báo khi chỉ số bất thường
@@ -42,3 +42,11 @@ Phần mềm tính toán giá trị nhịp tim và spO2 thông qua 2 giá trị 
 Theo thực tế, nếu nồng độ spO2 hiện tại dưới 94% thì màn hình hiển thị “Low SPO2”. Để đánh giá nhịp tim cao hay thấp, nhóm đã đánh giá thông qua giá trị nhịp tim trung bình và giá trị nhịp tim hiện tại của người dùng. Giá trị nhịp tim trung bình (được lưu trữ ở biến `avgHeartRate`) được tính toán thông qua 100 mẫu giá trị mới nhất mà cảm biến đo được. Trong trường hợp nhịp tim trung bình nhỏ hơn 80 BMP: hiển thị trên màn hình nhịp tim thấp nếu nhịp tim hiện tại nhỏ hơn 45 BMP, nhịp tim cao nếu nhịp tim hiện tại lớn hơn 105 BMP. Trong trường hợp còn lại, khi nhịp tim trung bình lớn hơn 80 thì màn hình sẽ hiển thị nhịp tim thấp nếu nhịp tim hiện tại nhỏ hơn 55 BMP, nhịp tim cao nếu nhịp tim hiện tại lớn hơn 110 BMP. 
 
 Trong quá trình lấy mẫu và tính toán nhịp tim, chỉ số spO2, nếu bắt gặp các giá trị bất thường như nêu trên thì còi báo động sẽ kêu để cảnh báo nhờ đặt ngưỡng giá trị là `HIGH`.
+
+## F. Tác giả
+| Họ tên  | MSSV  | Công việc    |
+| :---:   | :---: | :---:        |
+| Đặng Minh Tiến | 20204794   | Lắp thiết bị và code          |
+| Trần Thanh Hiền | 20204744   | Làm báo cáo         |
+| Hà Anh Vũ | 20204863   | Lắp thiết bị và kiểm thử        |
+| Hồ Sỹ Vinh | 20204863   |         |
